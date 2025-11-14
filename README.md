@@ -2,10 +2,9 @@
 [![Tests](https://github.com/pasqal-io/maximum-independent-set/actions/workflows/test.yml/badge.svg)](https://github.com/pasqal-io/maximum-independent-set/actions/workflows/test.yml)
 ![Coverage](https://img.shields.io/codecov/c/github/pasqal-io/maximum-independent-set?style=flat-square)
 
-
 # Maximum independent set
 
-The [Maximum Independent Set](https://en.wikipedia.org/wiki/Independent_set_(graph_theory)) problem (MIS) is a standard and widespread graph problem in scheduling, network theory, error correction, and even in the quantum sector as part of more general optimization algorithms (e.g., QUBO formulations) or as a benchmark on quantum annealers or neutral atom devices.
+The [Maximum Independent Set](<https://en.wikipedia.org/wiki/Independent_set_(graph_theory)>) problem (MIS) is a standard and widespread graph problem in scheduling, network theory, error correction, and even in the quantum sector as part of more general optimization algorithms (e.g., QUBO formulations) or as a benchmark on quantum annealers or neutral atom devices.
 
 There is currently no known polynomial-time algorithm for general graphs running on classical (non-quantum) devices, which means that, in practice, finding an exact solution for large graphs is generally not possible due to time and hardware limitations. For this reason, most applications of MIS must satisfy themselves with finding approximate solutions. As it turns out, in some cases, even finding approximate solutions is considered hard. For these reasons, there is high interest in solving MIS on quantum devices.
 
@@ -30,6 +29,7 @@ Edit file `pyproject.toml` to add the line
 to the list of `dependencies`.
 
 ### Using `pip` or `pipx`
+
 To install the `pipy` package using `pip` or `pipx`
 
 1. Create a `venv` if that's not done yet
@@ -48,6 +48,8 @@ $ . venv/bin/activate
 3. Install the package
 
 ```sh
+$ pip install -e .
+# or
 $ pip install maximum-independent-set
 # or
 $ pipx install maximum-independent-set
